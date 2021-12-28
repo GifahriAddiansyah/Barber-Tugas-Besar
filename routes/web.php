@@ -20,3 +20,4 @@ Route::get('/', function () {
 // Route::get('/', 'BarberController@index')->name('beranda');
 Route::Resource('/harga',HargaController::class);
 Route::Resource('/dashboards',DashboardController::class);
+Route::Resource('/dashboard',DashboardController::class);
