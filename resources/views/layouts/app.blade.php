@@ -1,54 +1,61 @@
-<!doctype html>
+<!-- ======= Header ======= -->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Barber Gifahri- Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <title>Hello, world!</title>
+  <!-- Favicons -->
+  <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+ 
+  <!--  {{ asset('') }} Vendor CSS Files -->
+  <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+<header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Barbershop</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#about"></a></li> -->
+          <li><a class="nav-link scrollto" href="#services">Pelayanan</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#portfolio"></a></li>
+          <li><a class="nav-link scrollto" href="#team"></a></li>
+          <li><a class="nav-link scrollto" href="#pricing"></a></li> -->
+          <li><a class="nav-link scrollto" href="#contact">Transaksi</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+    @yield("content")
+    <!-- Vendor JS Files -->
+  <script src="{{ asset('assets/vendor/purecounter/purecounter.js') }}"></script>
+  <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
   </head>
-  <body>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-        <img src="D:\Laravel\picture\logo.jpg" alt="" width="30" height="24">
-        </a>
-     <ul class="nav justify-content-end">
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Harga</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Jadwal</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link"  href="#">Pesan</a>
-    </li>
-    </ul>
-    </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-10">
-             <h1>BarberShop Gifahri</h1>
-            </div>
-        </div>
-    </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
+<body>

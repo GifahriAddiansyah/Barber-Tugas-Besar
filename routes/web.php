@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('welcome');
 });
-// Route::resource('/','CourseController');
-// Route::get('/', 'BarberController@index')->name('beranda');
+Route::resource('layouts', 'DashboardController');
 Route::Resource('/harga',HargaController::class);
 Route::Resource('/dashboards',DashboardController::class);
-Route::Resource('/dashboard',DashboardController::class);
+Route::Resource('/layouts',DashboardController::class);
