@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
  
 @section('content')
 <form class="mt-3" method="post" action="/barang/addProcess">
@@ -9,7 +9,7 @@
    
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Kode Barang</label>
+    <label for="exampleInputPassword1">Kode Harga</label>
     <input type="text" class="form-control" name="kodeBarang" id="exampleInputPassword1" placeholder="Input Kode Barang" required>
   </div>
   <div class="form-group">

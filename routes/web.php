@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('layouts', 'DashboardController');
+Route::resource('barber', 'BarberController');
 Route::Resource('/harga',HargaController::class);
 Route::Resource('/dashboards',DashboardController::class);
 Route::Resource('/layouts',DashboardController::class);

@@ -8,29 +8,34 @@ class HargaController extends Controller
 {
     private $items = [
         [
-            'code'=>'B001',
+            'code'=>'H111',
             'name'=>'Dewasa',
             'price'=>25000,
         ],
         [
-            'code'=>'B002',
-            'name'=>'Pulpen',
-            'price'=>1500,
+            'code'=>'H112',
+            'name'=>'Remaja',
+            'price'=>20000,
         ],
         [
-            'code'=>'B003',
-            'name'=>'Pencil',
-            'price'=>1000,
+            'code'=>'H113',
+            'name'=>'Anak-anak',
+            'price'=>15000,
         ],
         [
-            'code'=>'B004',
-            'name'=>'Penghapus',
-            'price'=>500,
+            'code'=>'H114',
+            'name'=>'Botak Mengkilat',
+            'price'=>27000,
         ],
         [
-            'code'=>'B005',
-            'name'=>'Penggaris',
-            'price'=>1300,
+            'code'=>'H115',
+            'name'=>'Kumis',
+            'price'=>10000,
+        ],
+        [
+            'code'=>'H116',
+            'name'=>'Keramas',
+            'price'=>5000,
         ],
     ];
 

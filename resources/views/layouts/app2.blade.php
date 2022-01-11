@@ -25,7 +25,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-<header id="header" class="fixed-top header-transparent">
+<header id="header" class="fixed header.header-brown">
     <div class="container d-flex align-items-center justify-content-between">
 
       <h1 class="logo"><a href="index.html">Barbershop</a></h1>
@@ -35,12 +35,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#about"></a></li> -->
           <li><a class="nav-link scrollto" href="#services">Pelayanan</a></li>
-          <!-- <li><a class="nav-link scrollto " href="#portfolio"></a></li>
-          <li><a class="nav-link scrollto" href="#team"></a></li>
-          <li><a class="nav-link scrollto" href="#pricing"></a></li> -->
-          <li><a class="nav-link scrollto" href="/harga/index">Transaksi</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Transaksi</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
