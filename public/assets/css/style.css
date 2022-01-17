@@ -9,7 +9,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   color: #444444;
 }
 
@@ -22,7 +23,9 @@ a:hover {
   color: #ffce3a;
   text-decoration: none;
 }
-
+th {
+  font-family: "Raleway", sans-serif;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
@@ -64,13 +67,16 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  background: rgba(55, 64, 85, 0.9);
+  background: #155e75;;
+}
+#header.header-brown {
+  background: #155e75;;
 }
 #header.header-transparent {
-  background: transparent;
+  background: #155e75;;
 }
 #header.header-scrolled {
-  background: rgba(55, 64, 85, 0.9);
+  background: #155e75;;
   padding: 15px 0;
 }
 #header .logo {
@@ -1323,4 +1329,7 @@ section {
 #footer .social-links a:hover {
   background: #ffce3a;
   text-decoration: none;
+}
+#table .table-brown {
+  background: #ffce3a;
 }

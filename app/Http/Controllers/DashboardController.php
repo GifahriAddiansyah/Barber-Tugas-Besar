@@ -10,4 +10,8 @@ class DashboardController extends Controller
     {
         return view('layouts.index');
     }
+    public function login()
+    {
+        return view('login.login');
+    }
 }
