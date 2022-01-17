@@ -6,7 +6,11 @@
     <div class="container position-relative">
       <h1>Welcome to Barbershop Gifahri</h1>
       <h2>Melayani Potong rambut dengan Model Terkini</h2>
+<<<<<<< HEAD
       <a href="login" class="btn-get-started scrollto">Login</a>
+=======
+      <a href="#about" class="btn-get-started scrollto">Login</a>
+>>>>>>> f33c10bfb04fe34fccacd1788277752d2e2fd291
     </div>
   </section><!-- End Hero -->
 

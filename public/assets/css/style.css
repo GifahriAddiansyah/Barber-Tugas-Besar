@@ -72,8 +72,15 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-brown {
   background: #155e75;;
 }
+#header.header-brown {
+  background: rgba(55, 64, 85, 0.9);
+}
 #header.header-transparent {
+<<<<<<< HEAD
   background: #155e75;;
+=======
+  background: rgba(55, 64, 85, 0.9);
+>>>>>>> f33c10bfb04fe34fccacd1788277752d2e2fd291
 }
 #header.header-scrolled {
   background: #155e75;;

@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 Route::resource('layouts', 'DashboardController');
 Route::resource('barber', 'BarberController');
+<<<<<<< HEAD
 // Route::resource('login', 'LoginController');
 Route::resource('admin', 'AdminController');
 Route::get('/login', function () {
@@ -31,3 +32,8 @@ Route::get('/logout', 'LoginController@logout')->name('logout');
 // Route::Resource('/harga',HargaController::class);
 // Route::Resource('/dashboards',DashboardController::class);
 // Route::Resource('/layouts',DashboardController::class);
+=======
+Route::Resource('/harga',HargaController::class);
+Route::Resource('/dashboards',DashboardController::class);
+Route::Resource('/layouts',DashboardController::class);
+>>>>>>> f33c10bfb04fe34fccacd1788277752d2e2fd291
