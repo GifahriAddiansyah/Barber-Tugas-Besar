@@ -38,15 +38,9 @@
           <!-- <li><a class="nav-link scrollto" href="#about"></a></li> -->
           <li><a class="nav-link scrollto" href="#services">Pelayanan</a></li>
           <!-- <li><a class="nav-link scrollto " href="#portfolio"></a></li>
-<<<<<<< HEAD
-          <li><a class="nav-link scrollto" href="#team"></a></li> -->
-          <li><a class="nav-link scrollto" href="/harga/index">Transaksi</a></li>  
-          <li><a class="nav-link scrollto" href="/login/login">Login</a></li>
-=======
           <li><a class="nav-link scrollto" href="#team"></a></li>
           <li><a class="nav-link scrollto" href="#pricing"></a></li> -->
           <li><a class="nav-link scrollto" href="/harga/index">Transaksi</a></li>
->>>>>>> f33c10bfb04fe34fccacd1788277752d2e2fd291
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
