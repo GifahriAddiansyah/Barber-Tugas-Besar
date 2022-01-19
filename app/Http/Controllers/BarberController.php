@@ -8,6 +8,6 @@ class BarberController extends Controller
 {
     public function index()
     {
-        return view('barber.index');
+        return view('admin.tambah');
     }
 }

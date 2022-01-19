@@ -14,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/welcome');
 });
 Route::resource('layouts', 'DashboardController');
 Route::resource('barber', 'BarberController');
+Route::resource('harga', 'HargaController');
 // Route::resource('login', 'LoginController');
 Route::resource('admin', 'AdminController');
 Route::get('/login', function () {
