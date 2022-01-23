@@ -14,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/welcome');
 });
 Route::resource('layouts', 'DashboardController');
 Route::resource('barber', 'BarberController');
+Route::resource('harga', 'HargaController');
 // Route::resource('login', 'LoginController');
 Route::resource('admin', 'AdminController');
 Route::get('/login', function () {
@@ -26,6 +27,10 @@ Route::get('/login', function () {
 Route::get('/login', 'DashboardController@login')->name('login');
 Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
 Route::get('/logout', 'LoginController@logout')->name('logout');
+Route::post('/simpan', 'HargaController@store')->name('simpan');
+Route::get('/edit/{id}', 'HargaController@edit')->name('edit');
+Route::post('/update/{id}', 'HargaController@update')->name('update');
+Route::get('/delete/{id}', 'HargaController@destroy')->name('delete');
 
 // Route::get('/login/register','LoginController');
 // Route::Resource('/harga',HargaController::class);

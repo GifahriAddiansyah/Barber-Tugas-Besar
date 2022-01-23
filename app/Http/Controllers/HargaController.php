@@ -3,70 +3,100 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\harga;
 
 class HargaController extends Controller
 {
-    private $items = [
-        [
-            'code'=>'H111',
-            'name'=>'Dewasa',
-            'price'=>25000,
-        ],
-        [
-            'code'=>'H112',
-            'name'=>'Remaja',
-            'price'=>20000,
-        ],
-        [
-            'code'=>'H113',
-            'name'=>'Anak-anak',
-            'price'=>15000,
-        ],
-        [
-            'code'=>'H114',
-            'name'=>'Botak Mengkilat',
-            'price'=>27000,
-        ],
-        [
-            'code'=>'H115',
-            'name'=>'Kumis',
-            'price'=>10000,
-        ],
-        [
-            'code'=>'H116',
-            'name'=>'Keramas',
-            'price'=>5000,
-        ],
-    ];
-
-    public function index(){
-        return view('harga.index',['data'=>$this->items]);
+    public function index()
+    {
+        //
+        $hargas = harga::all();
+        return view('harga.index', ['hargas' => $hargas ]);
     }
 
-    public function add(){
-        return view('harga.add');
-    }
-
-    public function addProcess(Request $request){
-        $nama = $request->namapembeli;
-        $kode = $request->kodeBarang;
-        $tanggal = date("d F Y");
-        $check = false;
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
         
-        foreach($this->items as $item){ 
-            if($kode == $item['code']){
-                $harga = $item['price'];
-                $namabarang = $item['name'];
-                $check = true;
-            }
-        }
+        return view('admin.tambah');
+    }
 
-    //     if($check == false){
-    //         return view('harga.show')->withErrors("Kode Harga $kode Tidak Terdaftar");
-    //     }else{
-    //         $total = (int)$jumlah * (int)$harga;
-    //         return view('barang.show',['nama'=>$nama,'kode'=>$kode,'jumlah'=>$jumlah,'tanggal'=>$tanggal,
-    //         'harga'=>$harga,'namabarang'=>$namabarang,'total'=>$total]);
-    //     }
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        // dd($request->all());
+        $request->validate([
+            
+            'kode' => 'required',
+            'nama_menu'=>'required',
+            'harga'=>'required'
+        ]);
+
+        harga::create($request->all());
+        return redirect('/harga')->with('success',  'Menu Saved!');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\harga  $harga
+     * @return \Illuminate\Http\Response
+     */
+    public function show(harga $harga)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\harga  $harga
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $hargas = harga::findorfail($id);
+        return view('harga.edit', compact('hargas'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\harga  $hargas
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $hargas = harga::findorfail($id);
+        $hargas->update($request->all());
+        return redirect('/harga')->with('toast_success',  'Data Updated!');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\harga  $harga
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        $hargas = harga::findorfail($id);
+        $hargas->delete();
+        return back()->with('info', 'Data Berhasil Dihapus');
+    
+    }
+    
+    public function dashboard(){
+        return view ('harga.index');
     }
 }
