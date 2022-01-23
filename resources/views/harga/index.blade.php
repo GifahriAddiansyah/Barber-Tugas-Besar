@@ -1,4 +1,5 @@
 @extends('admin.apps')
+<<<<<<< HEAD
 <?php $no = 1; ?>
 @section('contents')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -15,6 +16,16 @@
 
 <table id="table" class="table mt-3">
   <thead class="table-brown">
+=======
+ 
+@section('contents')
+<div class="flex items-center justify-between px-4 py-4 border-b lg:py-6 dark:border-primary-darker">
+              <h1 class="text-2xl font-semibold">Jenis Langganan</h1>
+            </div>
+<a class="btn btn-outline-secondary mt-3 btn-lg" href="/harga/add">Tambah Transaksi</a>
+<table id="table" class="card-body">
+  <thead class="table table-bordered">
+>>>>>>> 2b69d8a441ac9650a6667996f9578c67500c20c5
     <tr class="text-center">
       <th scope="col">#</th>
       <th scope="col">Kode </th>
