@@ -10,7 +10,7 @@ class HargaController extends Controller
     public function index()
     {
         //
-        $hargas = harga::all();
+        $hargas = harga::paginate(2);
         return view('harga.index', ['hargas' => $hargas ]);
     }
 
@@ -91,7 +91,7 @@ class HargaController extends Controller
     public function destroy($id)
     {
         $hargas = harga::findorfail($id);
-        $hargas->delete();
+        $hargas ->delete();
         return back()->with('info', 'Data Berhasil Dihapus');
     
     }
