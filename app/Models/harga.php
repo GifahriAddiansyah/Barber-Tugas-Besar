@@ -9,6 +9,9 @@ class harga extends Model
 {
     use HasFactory;
     protected $fillable=[
+        'id_harga',
+        'qty',
+        'status',
         'kode',
         'nama_menu',
         'harga'

@@ -40,7 +40,7 @@
           <!-- <li><a class="nav-link scrollto " href="#portfolio"></a></li>
           <li><a class="nav-link scrollto" href="#team"></a></li>
           <li><a class="nav-link scrollto" href="#pricing"></a></li> -->
-          <li><a class="nav-link scrollto" href="/harga/index">Transaksi</a></li>
+          <li><a class="nav-link scrollto active" href="#faq">Pertanyaan</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

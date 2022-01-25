@@ -6,7 +6,7 @@
     <div class="container position-relative">
       <h1>Welcome to Barbershop Gifahri</h1>
       <h2>Melayani Potong rambut dengan Model Terkini</h2>
-      <a href="login" class="btn-get-started scrollto">Login</a>
+      <a href="{{route('login')}}" class="btn-get-started scrollto">Login</a>
     </div>
   </section><!-- End Hero -->
 

@@ -18,6 +18,8 @@ class CreateHargasTable extends Migration
             $table->string('kode');
             $table->string('nama_menu');
             $table->integer('harga');
+            $table->unsignedInteger('id_harga');
+            $table->foreign('id_hargaa')->references('id')->on('hargas')->onDelete('cascade');
             $table->timestamps();
         });
     }

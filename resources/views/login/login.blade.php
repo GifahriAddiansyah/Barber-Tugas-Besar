@@ -81,7 +81,7 @@
             <!-- Or -->
             <div class="flex items-center justify-center space-x-2 flex-nowrap">
               <span class="w-20 h-px bg-gray-300"></span>
-              <span>OR</span>
+              <span></span>
               <span class="w-20 h-px bg-gray-300"></span>
             </div>
 
@@ -90,7 +90,7 @@
 
             <!-- Register link -->
             <div class="text-sm text-gray-600 dark:text-gray-400">
-              Don't have an account yet? <a href="/register class="text-blue-600 hover:underline">Register</a>
+              <!-- Don't have an account yet? <a href="/register class="text-blue-600 hover:underline">Register</a> -->
             </div>
           </div>
         </main>
